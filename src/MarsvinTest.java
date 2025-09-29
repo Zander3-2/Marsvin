@@ -13,12 +13,20 @@ public class MarsvinTest {
 
         public class ReadFile {
             public static void main(String[] args) {
-                File Marsvin = new File("Marsvin.txt");
+                File Marsvin = new File("marsvin.txt");
 
                 try (Scanner myReader = new Scanner(Marsvin)) {
                     while (myReader.hasNextLine()) {
                         String data = myReader.nextLine();
                         System.out.println(data);
 
+                    }
+                } catch (FileNotFoundException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
+
