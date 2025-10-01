@@ -1,3 +1,5 @@
+package MarsvinTest.java;
+
 public class Marsvin {
     private String name;
     private String race;
